@@ -1,0 +1,15 @@
+{
+  "budget_usd": 10000,
+  "dca": {
+    "amount": 500,
+    "price_drop_pct": 0.03
+  },
+  "atr": {
+    "period": 14,
+    "multiplier": 1.5
+  },
+  "ml": {
+    "forecast_horizon": 5
+  },
+  "strategy_mode": "hybrid"
+}
