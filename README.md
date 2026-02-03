@@ -14,20 +14,20 @@ This project implements a hybrid cryptocurrency trading system for Bitcoin (BTC-
 The system is designed for clarity, modularity, and explainability, making it suitable for academic evaluation and real-world prototyping.
 
 ## System Architecture
-Market Data (yfinance)
-        ↓
-Technical Indicators (ATR, RSI)
-        ↓
-ML Forecasting (ARIMA + Exponential Smoothing)
-        ↓
-Forecast Ensemble
-        ↓
-Hybrid Strategy Engine
-   ├── DCA Engine
-   ├── ATR Risk Manager
-   └── Rule-Based Strategy Advisor
-        ↓
-Portfolio Execution
+Market Data (yfinance)  
+        ↓  
+Technical Indicators (ATR, RSI)  
+        ↓  
+ML Forecasting (ARIMA + Exponential Smoothing)  
+        ↓  
+Forecast Ensemble  
+        ↓  
+Hybrid Strategy Engine  
+   ├── DCA Engine  
+   ├── ATR Risk Manager  
+   └── Rule-Based Strategy Advisor  
+        ↓  
+Portfolio Execution  
 
 ## Project Structure
 btc_trading_bot/
