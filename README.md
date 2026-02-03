@@ -30,53 +30,53 @@ Hybrid Strategy Engine
 Portfolio Execution  
 
 ## Project Structure
-btc_trading_bot/
-│
-├── data/
-│   └── market_data.py        # Fetches BTC price data
-│
-├── features/
-│   └── technicals.py         # ATR & RSI calculation
-│
-├── ml/
-│   ├── arima_model.py
-│   ├── exp_smoothing.py
-│   └── forecast_ensemble.py
-│
-├── strategies/
-│   ├── dca_engine.py
-│   ├── atr_risk.py
-│   ├── hybrid_strategy.py
-│
-├── llm/
-│   └── strategy_advisor.py   # Rule-based strategy decider
-│
-├── execution/
-│   └── portfolio.py          # Capital & asset management
-│
-├── config/
-│   └── strategy_config.json
-│
-└── main.py                   # Entry point
+btc_trading_bot/  
+│  
+├── data/  
+│   └── market_data.py        # Fetches BTC price data  
+│  
+├── features/  
+│   └── technicals.py         # ATR & RSI calculation  
+│  
+├── ml/  
+│   ├── arima_model.py  
+│   ├── exp_smoothing.py  
+│   └── forecast_ensemble.py  
+│  
+├── strategies/  
+│   ├── dca_engine.py  
+│   ├── atr_risk.py  
+│   ├── hybrid_strategy.py  
+│  
+├── llm/  
+│   └── strategy_advisor.py   # Rule-based strategy decider  
+│  
+├── execution/  
+│   └── portfolio.py          # Capital & asset management  
+│  
+├── config/  
+│   └── strategy_config.json  
+│  
+└── main.py                   # Entry point  
 
 ## Configuration
 
 Strategy behavior is controlled via strategy_config.json:
 
-{
-  "budget_usd": 10000,
-  "dca": {
-    "amount": 500,
-    "price_drop_pct": 0.03
-  },
-  "atr": {
-    "period": 14,
-    "multiplier": 1.5
-  },
-  "ml": {
-    "forecast_horizon": 5
-  },
-  "strategy_mode": "hybrid"
+{  
+  "budget_usd": 10000,  
+  "dca": {  
+    "amount": 500,  
+    "price_drop_pct": 0.03  
+  },  
+  "atr": {  
+    "period": 14,  
+    "multiplier": 1.5  
+  },  
+  "ml": {  
+    "forecast_horizon": 5  
+  },  
+  "strategy_mode": "hybrid"  
 }
 
 ## Key Components Explained
